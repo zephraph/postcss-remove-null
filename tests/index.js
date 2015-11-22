@@ -1,6 +1,6 @@
 import test from 'tape';
 import postcss from 'postcss';
-import plugin from '..';
+import plugin from '../lib';
 import { name } from '../package.json';
 import requireDir from 'require-directory';
 import forEach from 'lodash/collection/forEach';

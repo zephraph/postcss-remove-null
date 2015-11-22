@@ -1,2 +1,1 @@
-require('babel-core/register');
-module.exports = require('./lib').default;
+module.exports = require('./dist').default;

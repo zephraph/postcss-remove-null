@@ -1,6 +1,6 @@
 {
   "name": "postcss-remove-null",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "PostCSS plugin that strips out any properties with a value of null",
   "keywords": [
     "postcss",
@@ -19,22 +19,23 @@
   "dependencies": {
     "lodash": "^3.10.1",
     "postcss": "^5.0.2",
-    "require-directory": "^2.1.1",
-    "babel-core": "^6.2.1",
-    "babel-preset-es2015": "^6.1.18"
+    "require-directory": "^2.1.1"
   },
   "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-preset-es2015": "^6.1.18",
     "babel-tape-runner": "^1.3.0",
     "eslint": "^1.10.0",
     "pre-commit": "^1.1.2",
-    "shelljs": "^0.5.3",
     "tap-spec": "^4.1.1",
     "tape": "^4.2.2"
   },
   "scripts": {
+    "build": "babel lib --out-dir dist",
     "lint": "node ./node_modules/.bin/eslint .",
     "lint:fix": "node ./node_modules/.bin/eslint --fix .",
-    "test": "node ./node_modules/.bin/babel-tape-runner tests | tap-spec"
+    "test": "node ./node_modules/.bin/babel-tape-runner tests | tap-spec",
+    "prepublish": "npm run build"
   },
   "pre-commit": [
     "lint",
