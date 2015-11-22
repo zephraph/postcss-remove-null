@@ -3,6 +3,11 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [Unreleased]
+
+### Changed
+- Removed npm build script in favor of prepublish because of how travis handles builds
+
 ## [1.1.3] - 2015-11-22
 
 ### Fix
