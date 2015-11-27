@@ -5,6 +5,21 @@ export default [
     expected: 'a{}'
   },
   {
+    message:  'should remove two nulls',
+    fixture:  'a{margin:null null}',
+    expected: 'a{}'
+  },
+  {
+    message:  'should remove three nulls',
+    fixture:  'a{margin:null null null}',
+    expected: 'a{}'
+  },
+  {
+    message:  'should remove four nulls',
+    fixture:  'a{margin:null null null null}',
+    expected: 'a{}'
+  },
+  {
     message:  'should break out right and left if top is null and right is defined',
     fixture:  'a{margin:null 1px}',
     expected: 'a{margin-right: 1px;margin-left: 1px}'
