@@ -3,7 +3,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased]
+## [1.2.0] - 2015-11-30
+
+### Added
+- Support for margin, padding, and border-style
 
 ### Changed
 - Removed npm build script in favor of prepublish because of how travis handles builds
