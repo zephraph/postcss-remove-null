@@ -1,10 +1,10 @@
-# postcss-remove-null ![Build Status](https://travis-ci.org/zephraph/postcss-remove-null.svg?branch=master)
+# postcss-remove-null [![Build Status](https://travis-ci.org/zephraph/postcss-remove-null.svg?branch=master)](https://travis-ci.org/zephraph/postcss-remove-null)
 
 > Remove null values with PostCSS.
 
 ## Functionality
 
-The basic use case of this plugin functions very similar to `null` in Sass. 
+The basic use case of this plugin functions very similar to `null` in Sass.
 
 Given
 
@@ -22,7 +22,7 @@ div {}
 
 It's recommended that this plugin be followed by [cssnano](https://github.com/ben-eb/cssnano) or [postcss-discard-empty](https://github.com/ben-eb/postcss-discard-empty) to ensure that the `div` in the above example is removed.
 
-This plugin also intelligently handles nulls present in shorthand declarations. 
+This plugin also intelligently handles nulls present in shorthand declarations.
 
 Given
 
