@@ -33,6 +33,7 @@
   },
   "scripts": {
     "prepublish": "babel lib --out-dir dist",
+    "pretest": "npm run lint",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "test": "babel-tape-runner tests | tap-spec"
