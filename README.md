@@ -1,5 +1,7 @@
 # postcss-remove-null [![Build Status](https://travis-ci.org/zephraph/postcss-remove-null.svg?branch=master)](https://travis-ci.org/zephraph/postcss-remove-null)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/zephraph/postcss-remove-null.svg)](https://greenkeeper.io/)
+
 > Remove null values with PostCSS.
 
 ## Functionality
